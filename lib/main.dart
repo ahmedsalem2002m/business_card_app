@@ -17,11 +17,27 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 91,
+                radius: 111,
                 backgroundColor: Colors.white,
                 child: CircleAvatar(
-                  radius: 90,
+                  radius: 110,
                   backgroundImage: AssetImage("images/tharwat.png"),
+                ),
+              ),
+              Text(
+                "Ahmed Salem",
+                style: TextStyle(
+                  fontSize: 32,
+                  color: Colors.white,
+                  fontFamily: "Pacifico",
+                ),
+              ),
+              Text(
+                "FLUTTER DEVELOPER",
+                style: TextStyle(
+                  fontSize: 12,
+                  color: Color(0xff6C8090),
+                  fontWeight: FontWeight.bold
                 ),
               ),
             ],
