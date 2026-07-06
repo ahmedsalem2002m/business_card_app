@@ -40,6 +40,34 @@ class MyApp extends StatelessWidget {
                   fontWeight: FontWeight.bold
                 ),
               ),
+              Divider(
+
+              ),
+              Container(
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(12)
+                ),
+                padding: EdgeInsets.symmetric(horizontal: 12, vertical: 12),
+                margin: EdgeInsets.symmetric(horizontal: 24),
+
+                child: Row(
+                  children: [
+                    Icon(
+                      Icons.phone_rounded,
+                      size: 32,
+                      color: Color(0xff2B475E),
+                    ),
+                    Text(
+                      "(+02) 01030759478",
+                      style: TextStyle(
+                          fontSize: 18,
+                          fontWeight: FontWeight.w500
+                      ),
+                    )
+                  ],
+                ),
+              )
             ],
           ),
         ),
