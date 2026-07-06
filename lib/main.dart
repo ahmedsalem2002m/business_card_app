@@ -49,70 +49,43 @@ class MyApp extends StatelessWidget {
 
                 ),
               ),
-              Container(
-                margin: const EdgeInsets.symmetric(
-                    horizontal: 12.0, vertical: 6),
-                  height: 60,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
-                        child: Icon(
-                          Icons.phone_rounded,
-                          size: 32,
-                          color: Color(0xff2B475E),
-                        ),
-                      ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 24.0),
-                        child: Text(
-                          "(+02) 01030759478",
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500
-                          ),
-                        ),
-                      ),
+              Card(
+                margin: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 6),
+                child: ListTile(
 
-                    ],
+                  leading:Icon(
+                    Icons.phone_rounded,
+                    size: 32,
+                    color: Color(0xff2B475E),
+                  ) ,
+                  title: Text(
+                    "(+02) 01030759478",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500
+                    ),
                   ),
-                ),
-              Container(
-                margin: const EdgeInsets.symmetric(
-                    horizontal: 12.0, vertical: 6),
-                height: 60,
-                decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(8)
-                ),
-                child: Row(
-                  children: [
-                    Padding(
-                      padding: const EdgeInsets.only(left: 12.0),
-                      child: Icon(
-                        Icons.mail,
-                        size: 32,
-                        color: Color(0xff2B475E),
-                      ),
-                    ),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 24.0),
-                      child: Text(
-                        "ahmedsalem@gmail.com",
-                        style: TextStyle(
-                            fontSize: 18,
-                            fontWeight: FontWeight.w500
-                        ),
-                      ),
-                    ),
-
-                  ],
                 ),
               ),
+              Card(
+                margin: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 6),
+                child: ListTile(
+
+                  leading:Icon(
+                    Icons.mail,
+                    size: 32,
+                    color: Color(0xff2B475E),
+                  ) ,
+                  title: Text(
+                    "ahmedsalem@gmail.com",
+                    style: TextStyle(
+                        fontSize: 18,
+                        fontWeight: FontWeight.w500
+                    ),
+                  ),
+                ),
+              ),
+
 
 
             ],
