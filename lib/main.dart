@@ -17,10 +17,10 @@ class MyApp extends StatelessWidget {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               CircleAvatar(
-                radius: 111,
+                radius: 101,
                 backgroundColor: Colors.white,
                 child: CircleAvatar(
-                  radius: 110,
+                  radius: 100,
                   backgroundImage: AssetImage("images/tharwat.png"),
                 ),
               ),
@@ -41,8 +41,17 @@ class MyApp extends StatelessWidget {
                 ),
               ),
               Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 6),
-                child: Container(
+                padding: const EdgeInsets.symmetric(horizontal: 28.0),
+                child: Divider(
+                  color: Color(0xff6C8090),
+                  height: 6,
+                  thickness: 1,
+
+                ),
+              ),
+              Container(
+                margin: const EdgeInsets.symmetric(
+                    horizontal: 12.0, vertical: 6),
                   height: 60,
                   decoration: BoxDecoration(
                       color: Colors.white,
@@ -72,38 +81,36 @@ class MyApp extends StatelessWidget {
                     ],
                   ),
                 ),
-              ),
-              Padding(
-                padding: const EdgeInsets.symmetric(horizontal: 12.0,vertical: 6),
-                child: Container(
-                  height: 60,
-                  decoration: BoxDecoration(
-                      color: Colors.white,
-                      borderRadius: BorderRadius.circular(8)
-                  ),
-                  child: Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.only(left: 12.0),
-                        child: Icon(
-                          Icons.mail,
-                          size: 32,
-                          color: Color(0xff2B475E),
+              Container(
+                margin: const EdgeInsets.symmetric(
+                    horizontal: 12.0, vertical: 6),
+                height: 60,
+                decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(8)
+                ),
+                child: Row(
+                  children: [
+                    Padding(
+                      padding: const EdgeInsets.only(left: 12.0),
+                      child: Icon(
+                        Icons.mail,
+                        size: 32,
+                        color: Color(0xff2B475E),
+                      ),
+                    ),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 24.0),
+                      child: Text(
+                        "ahmedsalem@gmail.com",
+                        style: TextStyle(
+                            fontSize: 18,
+                            fontWeight: FontWeight.w500
                         ),
                       ),
-                      Padding(
-                        padding: const EdgeInsets.only(left: 24.0),
-                        child: Text(
-                          "ahmedsalem@gmail.com",
-                          style: TextStyle(
-                              fontSize: 18,
-                              fontWeight: FontWeight.w500
-                          ),
-                        ),
-                      ),
+                    ),
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
 
